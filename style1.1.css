@@ -1,0 +1,630 @@
+@media (max-width: 600px) {
+
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+    /* header */
+    .top2 {
+        width: 100vw;
+        height: 5.9vh;
+        background: rgba(255, 73, 78, 0.26);
+        position: absolute;
+        top: 0;
+        z-index: 3;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .logo2 {
+        padding-top: 2%;
+        padding-left: 15px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        width: 100vw;
+        height: 30vh;
+        background: linear-gradient(90deg,
+            rgba(255, 157, 144, 0.84) 14%,
+            rgba(255, 106, 63, 0.84) 28%,
+            rgba(255, 159, 47, 0.84) 42%,
+            rgba(255, 215, 57, 0.84) 56%,
+            rgba(193, 204, 74, 0.84) 70%,
+            rgba(159, 219, 230, 0.84) 84%,
+            rgba(200, 128, 165, 0.84) 98%);
+    }
+
+    .logo {
+        width: 50vw;
+        height: auto;
+        padding-top: 42px;
+        position: static;
+    }
+
+    .text1 {
+        width: 80vw;
+        color: white;
+        font-family: "Agbalumo", sans-serif;
+      font-size: 2.5vw;
+        font-weight: 400;
+        align-items: center;
+        text-align: center;
+       overflow-wrap: break-word;
+    word-break: break-word;
+    position: absolute;
+    padding-top: 43%
+    }
+
+    .header-wrapper {
+    position: relative; 
+    width: 100vw;
+}
+
+    /* section titles */
+    .text2 {
+        color: #FFF;
+        -webkit-text-stroke-width: 2.5px;
+        -webkit-text-stroke-color: #CA1D1D;
+        font-family: "Alfa Slab One";
+        font-size: 8vw;
+        font-weight: 400;
+        letter-spacing: 5px;
+        text-align: center;
+        padding: 45px 0 0 0;
+        margin: 0;
+    }
+
+    .text3 {
+        color: #FFF;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #CA1D1D;
+        font-family: "Alfa Slab One";
+        font-size: 6vw;
+        font-weight: 400;
+        letter-spacing: 4.8px;
+        text-align: center;
+        padding: 30px 0 30px 0;
+        margin: 10-x;
+    }
+
+    /* flavors */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        padding: 6px 10px 0 22px;
+        box-sizing: border-box;
+        width: 100%;
+    
+    }
+
+     .rectangle-grid1{
+        margin-top: 13px;
+        
+        width: 26vw;
+        height: 26vw;
+        border-radius: 27px; 
+        background: #FF2A00;
+        box-shadow: 0 4px 4px 5px rgba(255, 0, 0, 0.25);
+    }
+
+    .rectangle-grid2{
+        margin-top: 13px;
+        width: 26vw;
+        height: 26vw;
+        border-radius: 27px; 
+        background: #FF7900;
+        box-shadow: 0 4px 4px 5px rgba(255, 137, 2, 0.637);
+    }
+
+
+    .rectangle-grid3{
+        margin-top: 13px;
+        width: 26vw;
+        height: 26vw;
+        border-radius: 27px;
+        background: #FFFC5A;
+        box-shadow: 0 4px 4px 5px #FFE653;
+    }
+
+    .flavor1{
+        width: 40vw;
+        height: auto;
+        transform: translate(-11%, -30%);
+    }
+
+    .flavor2{
+        width: 30vw;
+        height: auto;
+        transform: translate(-3%, -30%);
+    }
+
+    .flavor3{
+        width: 28vw;
+        height: auto;
+        transform: translate(1%, -30%);
+
+    }
+
+
+    .flavor-text1{
+        color: #FFF8F8;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(0, 0, 0, 0.61);
+        font-family: "Alfa Slab One";
+        font-size: 3vw;
+        font-weight: 400;
+        letter-spacing: 1.8px;
+        text-align: center;
+        transform: translate(2%, -200%);
+        
+    }
+
+    .flavor-text2{
+        color: #FFF8F8;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(0, 0, 0, 0.61);
+        font-family: "Alfa Slab One";
+        font-size: 4vw;
+        font-weight: 400;
+        letter-spacing: 1.8px;
+        text-align: center;
+        transform: translate(2%, -259%);
+       
+    }
+
+    .flavor-text3 {
+        color: #FFF8F8;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(0, 0, 0, 0.61);
+        font-family: "Alfa Slab One";
+        font-size: 4vw;
+        font-weight: 400;
+        letter-spacing: 1.8px;
+        text-align: center;
+        transform: translate(2%, -240%);
+        
+    }
+
+    /* add ons */
+    .text4 {
+        color: #FFF;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #CA1D1D;
+        font-family: "Alfa Slab One";
+        font-size: 6vw;
+        font-weight: 400;
+        letter-spacing: 5px;
+        text-align: center;
+        padding: 30px 0 30px 0;
+        margin: 0;
+    }
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        gap: 20px;
+        padding: 10px 10px 0 10px;
+        box-sizing: border-box;
+    }
+
+    .rectangle-grid4 {
+        margin-top: 13px;
+        width: 28vw;
+        height: 28vw;
+        border-radius: 27px;
+        background: #3C3C3C;
+        box-shadow: 0 4px 4px 5px rgba(0, 0, 0, 0.59);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .rectangle-grid5 {
+        margin-top: 13px;
+        width: 28vw;
+        height: 28vw;
+        border-radius: 27px;
+        background: #FFC353;
+        box-shadow: 0 4px 4px 5px #FFB527;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .addons1{
+        width: 30vw;
+        height: auto;
+        
+        transform: translate(-4%, -20%);
+
+
+    }
+    .addons2 {
+        width: 30vw;
+        height: auto;
+        transform: translate(1%, -21%);
+    }
+
+    .addons-text1{
+         color: #FFF8F8;
+        text-align: center;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(0, 0, 0, 0.61);
+        font-family: "Alfa Slab One";
+        font-size: 3vw;
+        font-weight: 400;
+        letter-spacing: 1.8px;
+        transform: translateY(-80%);
+        width: 100vw;
+    }
+
+    .addons-text2 {
+        color: #FFF8F8;
+        text-align: center;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(0, 0, 0, 0.61);
+        font-family: "Alfa Slab One";
+        font-size: 3vw;
+        font-weight: 400;
+        letter-spacing: 1.8px;
+        transform: translateY(-55%);
+        width: 100vw;
+    }
+
+    /* sizes */
+    .text5 {
+        color: #FFF;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #CA1D1D;
+        font-family: "Alfa Slab One";
+        font-size: 6vw;
+        font-weight: 400;
+        letter-spacing: 5px;
+        text-align: center;
+        padding: 30px 0 10px 0;
+        margin: 0;
+    }
+
+    .size {
+        width: 85vw;
+        height: auto;
+        min-height: 12vh;
+        border-radius: 27px;
+        background: #FFA897;
+        box-shadow: 0 4px 4px 3px rgba(255, 66, 66, 0.52);
+        margin: 10px auto 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .size-img {
+        width: 30vw;
+        height: auto;
+    }
+
+    /* star badges — repositioned to flex layout */
+    .star-badge,
+    .star-badge2 {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 13vw;
+        height: 7vh;
+    }
+
+    .star-badge::before,
+    .star-badge2::before {
+        content: '';
+        position: absolute;
+        width: 13vw;
+        height: 7vh;
+        background: white;
+        clip-path: polygon(
+            50% 10%, 65% 32%, 98% 35%, 75% 57%,
+            79% 91%, 50% 75%, 21% 91%, 26% 57%,
+            2% 35%, 35% 32%
+        );
+    }
+
+    .star,
+    .star2 {
+        position: absolute;
+        width: 10.5vw;
+        height:  5.5vh;
+        background: #ff6868;
+        clip-path: polygon(
+            50% 10%, 65% 32%, 98% 35%, 75% 57%,
+            79% 91%, 50% 75%, 21% 91%, 26% 57%,
+            2% 35%, 35% 32%
+        );
+    }
+
+    .star-badge span,
+    .star-badge2 span {
+        position: relative;
+        z-index: 1;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        color: white;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .sizetext1,
+    .sizetext2 {
+        color: #FFF8F8;
+        text-align: center;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(0, 0, 0, 0.61);
+        font-family: "Alfa Slab One";
+        font-size: 3vw;
+        font-weight: 100vw;
+        letter-spacing: 1.08px;
+        margin-top: 4px;
+    }
+
+    
+    .size > div,
+    .size > p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* thick n match */
+    .text6 {
+        color: #FFFDFD;
+        text-align: center;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #CA1D1D;
+        font-family: "Alfa Slab One";
+        font-size: 5vw;
+        font-weight: 100vw;
+        letter-spacing: 4.8px;
+        padding: 30px 0 10px 0;
+        margin: 0;
+    }
+
+    .match {
+        width: 85%;
+        height: auto;
+        min-height: 10vh;
+        border-radius: 27px;
+        background: #FF8080;
+        box-shadow: 0 4px 4px 3px rgba(255, 120, 120, 0.43);
+        margin: 0 auto 40px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .text7 {
+        width: 100vw;
+        color: #FFFBFB;
+        text-align: center;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #CA1D1D;
+        font-family: "Alfa Slab One";
+        font-size: 3.5vw;
+        font-weight: 100vw;
+        letter-spacing: 1.95px;
+        margin-bottom: 8px;
+    }
+
+    .star-badge3,
+    .star-badge4 {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 13vw;
+        height: 7vh
+    }
+
+    .star-badge3::before,
+    .star-badge4::before {
+        content: '';
+        position: absolute;
+       width: 13vw;
+        height: 7vh;
+        background: white;
+        clip-path: polygon(
+            50% 10%, 65% 32%, 98% 35%, 75% 57%,
+            79% 91%, 50% 75%, 21% 91%, 26% 57%,
+            2% 35%, 35% 32%
+        );
+    }
+
+    .star3,
+    .star4 {
+        position: absolute;
+        width: 10.5vw;
+        height:  5.5vh;
+        background: #ff6868;
+        clip-path: polygon(
+            50% 10%, 65% 32%, 98% 35%, 75% 57%,
+            79% 91%, 50% 75%, 21% 91%, 26% 57%,
+            2% 35%, 35% 32%
+        );
+    }
+
+    .star-badge3 span,
+    .star-badge4 span {
+        position: relative;
+        z-index: 1;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        color: white;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .sizetext3,
+    .sizetext4 {
+        color: #FFF8F8;
+        text-align: center;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(0, 0, 0, 0.61);
+        font-family: "Alfa Slab One";
+        font-size: 3vw;
+        font-weight: 100vw;
+        letter-spacing: 1.08px;
+        margin-top: 4px;
+    }
+
+
+/*ORDER*/
+
+.order{
+    width: 50vw;
+    height: 6.5vh;
+    border-radius: 97px;
+    background: #97FF17;
+    box-shadow: 0 0 11.1px 2px #CA6A1D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20% auto 40px auto;
+    overflow: hidden; /* clips text if it overflows */
+    padding: 0 10px; /* adds inner breathing room */
+    box-sizing: border-box;}
+
+.text8{
+    color: #FFF;
+text-align: center;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: #C78500;
+font-family: "Alfa Slab One";
+font-size: clamp(17px, 3.5vw, 20px);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 2px;
+white-space: nowrap;
+}
+
+    /*menu*/
+
+/* base styles */
+
+.bullet{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bullet li {
+    margin-bottom: 20%; 
+}
+a {
+    color: white;
+    text-decoration: none;
+
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: #fff45c;
+}
+
+/* off-screen-menu */
+.off-screen-menu {
+    background-color:  rgb(255, 166, 82);
+    height: 100vh;
+    width: 100vw;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 2.3rem;
+    transition: .3s ease;
+    overflow: hidden;
+    font-family: Agbalumo;
+    z-index: 4;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+
+
+/* nav */
+nav {
+    display: flex;
+    margin-bottom: -7.5%;
+}
+
+/* ham menu */
+.ham-menu {
+    height: 3vh;
+    width:3vw;
+    margin-left: auto;
+    position: relative;
+    padding-left: 14%;
+    z-index: 4;
+}
+
+.ham-menu span {
+    height: 0.24vh;
+    width: 6vw;
+    background-color: #fcfcfc;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-70%, 90%);
+    transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+    margin-top: 10px;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+}

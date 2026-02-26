@@ -1,0 +1,235 @@
+@media (max-width: 900px) {
+
+body,
+    html {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        background: url(bg.jpg) lightgray 50% / cover no-repeat;
+    }
+
+    /* header */
+    .top2 {
+        width: 100vw;
+        height: 5.9vh;
+        background: rgba(255, 73, 78, 0.26);
+        position: absolute;
+        top: 0;
+        z-index: 3;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+
+    .logo2 {
+        padding-top: 2%;
+        padding-left: 15px;
+        width: 31px;
+        height: 31px;
+    }
+    
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        width: 100vw;
+        height: 30vh;
+        background: linear-gradient(90deg,
+            rgba(255, 157, 144, 0.84) 14%,
+            rgba(255, 106, 63, 0.84) 28%,
+            rgba(255, 159, 47, 0.84) 42%,
+            rgba(255, 215, 57, 0.84) 56%,
+            rgba(193, 204, 74, 0.84) 70%,
+            rgba(159, 219, 230, 0.84) 84%,
+            rgba(200, 128, 165, 0.84) 98%);
+    }
+
+    .text1{
+        width: 50.7vw;
+        height: 16.8vh;
+        color: #FFF;
+        text-align: center;
+        text-shadow: 0 4px 4px rgba(255, 0, 0, 0.95);
+        font-family: Agbalumo;
+        font-size:  clamp(50px, 4vw, 48px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+    .header-wrapper {
+    position: relative; 
+    width: 100vw;
+}
+
+    .paper-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 20px;
+    flex-direction: column; 
+    padding-bottom: 20%;
+    }
+
+    .paper {
+        width: 120vw;          
+        height: auto;        
+        margin-left: 3%; 
+    }
+
+    .photo1{
+width: 75vw;
+height:auto;
+margin-right: 1%;
+margin-top: -68%;
+}
+
+.grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px 10px 0 10px;
+        box-sizing: border-box;
+        place-items: center;
+    }
+
+    .photo2, .photo3, .photo4, .photo5{
+        width: 46vw;
+        height: auto;
+    }
+
+
+    .paper-container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 20px;
+    flex-direction: column; 
+    padding-bottom: 20%;
+    }    
+
+    .paper2{
+        width: 120vw;          
+        height: auto;        
+        margin-left: 3%; 
+        padding-bottom: 15%;
+    }
+
+    .photo6{
+width: 75vw;
+height:auto;
+margin-right: 1%;
+margin-top: -83%;
+}
+
+
+/*menu*/
+
+/* base styles */
+
+.bullet{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bullet li {
+    margin-bottom: 20%; 
+}
+a {
+    color: white;
+    text-decoration: none;
+    
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: #fff45c;
+}
+
+/* off-screen-menu */
+.off-screen-menu {
+    background-color:  rgb(255, 166, 82);
+    height: 100vh;
+    width: 100vw;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 2.3rem;
+    transition: .3s ease;
+    overflow: hidden;
+    font-family: Agbalumo;
+    z-index: 4;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+
+
+/* nav */
+nav {
+    display: flex;
+    margin-bottom: -7.5%;
+}
+
+/* ham menu */
+.ham-menu {
+    height: 3vh;
+    width: 3vw;
+    margin-left: auto;
+    position: relative;
+    margin-right: 2%;
+    z-index: 4;
+}
+.ham-menu span {
+    height:  0.24vh;
+    width: 7vw;
+    background-color: #fcfcfc;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-70%, 90%);
+    transition: .3s ease;
+    
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+    margin-top: 10px;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+}

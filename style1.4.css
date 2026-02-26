@@ -1,0 +1,689 @@
+@media (max-width: 900px) {
+
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+    /* header */
+    .top2 {
+        width: 100vw;
+        height: 5.9vh;
+        background: rgba(255, 73, 78, 0.26);
+        position: absolute;
+        top: 0;
+        z-index: 3;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        padding-top: 1%;
+    }
+
+    .logo2 {
+        padding-top: 1.5%;
+        padding-left: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .cart {
+        padding-bottom: 2%;
+        padding-left: 35%;
+        width: 6vw;
+        height: 3vh;
+        z-index: 4;
+    }
+    
+.header-wrapper {
+    position: relative; 
+    width: 100vw;
+}
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        width: 100vw;
+        height: 30vh;
+        background: linear-gradient(90deg,
+            rgba(255, 157, 144, 0.84) 14%,
+            rgba(255, 106, 63, 0.84) 28%,
+            rgba(255, 159, 47, 0.84) 42%,
+            rgba(255, 215, 57, 0.84) 56%,
+            rgba(193, 204, 74, 0.84) 70%,
+            rgba(159, 219, 230, 0.84) 84%,
+            rgba(200, 128, 165, 0.84) 98%);
+    }
+
+    .logo {
+        width: 50vw;
+        height: auto;
+        padding-top: 42px;
+        position: static;
+    }
+
+    .text1 {
+        width: 80vw;
+        color: white;
+        font-family: "Agbalumo", sans-serif;
+      font-size: 2.5vw;
+        font-weight: 400;
+        align-items: center;
+        text-align: center;
+       overflow-wrap: break-word;
+    word-break: break-word;
+    position: absolute;
+    padding-top: 43%
+    }
+
+    .text2{
+transform: rotate(0.214deg);
+color: #FFF;
+-webkit-text-stroke-width: 2.7px;
+-webkit-text-stroke-color: #CA1D1D;
+font-family: "Alfa Slab One";
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 136.859%; 
+letter-spacing: 3.24px;
+text-align: center;
+margin: 20px auto;
+padding-top: 10%;
+padding-bottom: 10%;
+    }
+    /*order*/
+
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* equal columns */
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 15px 0 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.regular,
+.gtm {
+    width: 100%; /* let the grid control width */
+    aspect-ratio: 1/1; /* keeps both boxes square and equal */
+    border-radius: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.regular {
+    background: #FF9D55;
+    box-shadow: 0 4px 4px 3px rgba(255, 156, 86, 0.78);
+}
+
+.gtm {
+    background: #CE99B7;
+    box-shadow: 0 4px 4px 3px rgba(199, 151, 204, 0.83);
+}
+
+    .regularr {
+    width: 90%; /* fit inside the box */
+    color: #FFFDFD;
+    text-align: center;
+    -webkit-text-stroke-width: 2.1px;
+    -webkit-text-stroke-color: #DE5E00;
+    font-family: "Alfa Slab One";
+    font-size: clamp(25px, 4vw, 25px); /* scales with screen */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 136.859%;
+    letter-spacing: 2px; /* reduce letter-spacing so it doesn't overflow */
+    margin: 0; /* remove fixed margin, flex handles centering */
+}
+
+.gtmm {
+    width: 90%; /* fit inside the box */
+    color: #FFFDFD;
+    text-align: center;
+    -webkit-text-stroke-width: 2.1px;
+    -webkit-text-stroke-color: #BD0D70;
+    font-family: "Alfa Slab One";
+    font-size: clamp(25px, 3.5vw, 21px); /* scales with screen */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 136.859%;
+    letter-spacing: 2px;
+    margin: 0; /* remove fixed margin, flex handles centering */
+}
+
+    /*menu*/
+
+.bullet{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bullet li {
+    margin-bottom: 20%; 
+}
+a {
+    color: white;
+    text-decoration: none;
+    
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: #fff45c;
+}
+
+/* off-screen-menu */
+.off-screen-menu {
+    background-color:  rgb(255, 166, 82);
+    height: 100vh;
+    width: 100vw;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 2.3rem;
+    transition: .3s ease;
+    overflow: hidden;
+    font-family: Agbalumo;
+    z-index: 4;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+
+
+/* nav */
+nav {
+    display: flex;
+    margin-bottom: -7.5%;
+}
+
+/* ham menu */
+.ham-menu {
+    height: 3vh;
+    width: 3vw;
+    margin-left: auto;
+    position: relative;
+    margin-right: 2%;
+    z-index: 4;
+}
+.ham-menu span {
+    height:  0.24vh;
+    width: 7vw;
+    background-color: #fcfcfc;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-70%, 90%);
+    transition: .3s ease;
+    
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+    margin-top: 10px;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/*order regular*/
+.order1, .order2 {
+    width: 85vw;
+    height: auto;
+    min-height: 60vh;
+    border: 2px solid #000;
+    background: #FFF;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 5;
+    transform: translate(8%, -85%);
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+   
+
+   .order1 { display: none; }
+.order1.active { display: block; }
+.order2 { display: none; }
+.order2.active { display: block; }
+    
+
+    .regularorder{
+    color: #FFFDFD;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #DE5E00;
+    font-family: "Alfa Slab One";
+    font-size: clamp(18px, 5vw, 28px);
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    .box{
+        position: relative;
+        width: 75vw;
+height: 5vh;
+border: 1px solid #B8B8B8;
+background: #FDFDFD;
+grid-template-columns: repeat(3, auto);
+margin-top: 10%;
+margin-left:5%;
+display: flex;
+
+    }
+
+    .text1order{
+        display: inline-block;
+        width: auto;
+height: 24px;
+color: #DE5E00;
+margin-right: 13%;
+font-family: "Alfa Slab One";
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 136.859%; 
+letter-spacing: 4px;
+transform: translate(10%, -30%);
+    }
+
+    .arrow{
+        margin-top:3%;
+        position: absolute;
+        padding-left: 90%;
+        overflow: hidden;
+        z-index: 5;
+        object-fit: cover;
+    }
+
+    .qualityorder { color: #DE5E00; }
+.qualityorder2 { color: #BD0D70; }
+
+    .qualityorder, .qualityorder2 {
+    font-family: "Alfa Slab One";
+    font-size: clamp(13px, 3vw, 15px);
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 90%;
+    margin-top: auto;
+    padding-top: 20px;
+    padding-left: 25px
+}
+    
+
+.totalorder { color: #DE5E00; }
+.totalorder2 { color: #BD0D70; }
+
+    .totalorder, .totalorder2 {
+    font-family: "Alfa Slab One";
+    font-size: clamp(13px, 3vw, 15px);
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 90%;
+    margin-top: 5px;
+    padding-left: 25px
+}
+
+    .circle1, .circle2 {
+    width: 100%;
+    height: 44px;
+    border-radius: 97px; /* pill shape like image */
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.circle1 { background: #F00; }
+.circle2 { background: #3BFF5F; }
+
+.cancelorder, .cancelorder2, .doneorder1, .doneorder2 {
+    font-family: "Alfa Slab One";
+    font-size: clamp(15px, 3.5vw, 18px);
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0;
+}
+
+.cancelorder, .cancelorder2 { color: #000; }
+.doneorder1, .doneorder2  { color: #FFF; }
+/*order thick*/
+
+    
+.text2order{
+        display: inline-block;
+        width: auto;
+height: 24px;
+color: #BD0D70;
+margin-right: 13%;
+font-family: "Alfa Slab One";
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 136.859%; 
+letter-spacing: 4px;
+transform: translate(10%, -30%);
+}
+
+
+.gelaorder{
+        color: #FFFDFD;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #BD0D70;
+    font-family: "Alfa Slab One";
+    font-size: clamp(18px, 5vw, 28px);
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    /*pull down part1 regular size*/
+    .pull1{
+        width: 74.9vw;
+        height: 14vh;
+        border: 1px solid #B8B8B8;
+        background: #FFF;
+        transform: translateY(34%);
+        position: absolute;
+        z-index: 10;
+    }
+
+    .pull1{
+        display: none;
+    }
+
+    .pull1.active{
+        display: block;
+    }
+
+    .size1{
+        width: auto;
+height: 20px;
+color: #FFF;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #DE5E00;
+font-family: "Alfa Slab One";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 136.859%; /* 20.529px */
+letter-spacing: 3.6px;
+transform:translate(5%, 20%);
+    }
+
+    .size1-1{
+        width: 39px;
+height: 16px;
+color: #FFF;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #DE5E00;
+font-family: "Alfa Slab One";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 136.859%; /* 20.529px */
+letter-spacing: 3.6px;
+transform: translate(570%, -400%);
+    }
+
+/*part2 regular flavor*/
+
+.pull2{
+        width: 74.9vw;
+        height: 20vh;
+        border: 1px solid #B8B8B8;
+        background: #FFF;
+        transform: translateY(24%);
+        position: absolute;
+        z-index: 10;
+    }
+
+    .pull2{
+        display: none;
+    }
+
+    .pull2.active{
+        display: block;
+    }
+    
+
+    .flavor1{
+        width: auto;
+height: 21px;
+color: #FFF;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #DE5E00;
+font-family: "Alfa Slab One";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 136.859%; /* 20.529px */
+letter-spacing: 3.6px;
+transform:translate(5%, 20%);
+    }
+    
+
+    /*part3 regular addons*/
+
+    .pull3{
+        width: 74.9vw;
+        height: 11vh;
+        border: 1px solid #B8B8B8;
+        background: #FFF;
+        transform: translateY(44%);
+        position: absolute;
+        z-index: 10;
+    }
+
+   .pull3{
+        display: none;
+    }
+
+    .pull3.active{
+        display: block;
+    }
+    
+
+    .addons1{
+        width: 74.9vw;
+
+color: #FFF;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #DE5E00;
+font-family: "Alfa Slab One";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 136.859%; /* 20.529px */
+letter-spacing: 3.6px;
+transform:translate(5%, -30%);
+    }
+
+    /*pull down part1 thick size*/
+
+    .pull1-1{
+        width: 74.9vw;
+        height: 14vh;
+        border: 1px solid #B8B8B8;
+        background: #FFF;
+        transform: translateY(34%);
+        position: absolute;
+        z-index: 10;
+    }
+
+    .pull1-1{
+        display: none;
+    }
+
+    .pull1-1.active{
+        display: block;
+    }
+
+    .size2{
+        width: auto;
+height: 20px;
+color: #FFF;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color:#BD0D70;
+font-family: "Alfa Slab One";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 136.859%; /* 20.529px */
+letter-spacing: 3.6px;
+transform:translate(5%, 20%);
+    }
+
+    .size2-1{
+        width: 39px;
+height: 16px;
+color: #FFF;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #BD0D70;
+font-family: "Alfa Slab One";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 136.859%; /* 20.529px */
+letter-spacing: 3.6px;
+transform: translate(520%, -400%);
+    }
+
+
+    /*part2 thick flavor*/
+
+.pull2-1{
+        width: 37.4vw;
+        height: 20vh;
+        border: 1px solid #B8B8B8;
+        background: #FFF;
+        transform: translateY(24%);
+        position: absolute;
+        z-index: 10;
+    }
+
+    .pull2-1{
+        display: none;
+    }
+
+    .pull2-1.active{
+        display: block;
+    }
+    
+
+    .flavor1-2{
+        width: auto;
+height: 21px;
+color: #FFF;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #BD0D70;
+font-family: "Alfa Slab One";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 136.859%; /* 20.529px */
+letter-spacing: 3.6px;
+transform:translate(5%, 20%);
+    }
+
+    .pull2-2{
+        width: 37.4vw;
+        height: 20vh;
+        border: 1px solid #B8B8B8;
+        background: #FFF;
+        transform: translate(100%, 24%);
+        position: absolute;
+        z-index: 10;
+    }
+
+    .pull2-2{
+        display: none;
+    }
+
+    .pull2-2.active{
+        display: block;
+    }
+    /*part3 thick addons*/
+
+    .pull3-1{
+         width: 74.9vw;
+        height: 11vh;
+        border: 1px solid #B8B8B8;
+        background: #FFF;
+        transform: translateY(44%);
+        position: absolute;
+        z-index: 10;
+    }
+
+   .pull3-1{
+        display: none;
+    }
+
+    .pull3-1.active{
+        display: block;
+    }
+    
+
+    .addons1-2{
+        width: 74.9vw;
+
+color: #FFF;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #BD0D70;
+font-family: "Alfa Slab One";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 136.859%; /* 20.529px */
+letter-spacing: 3.6px;
+transform:translate(5%, -30%);
+    }
+
+}

@@ -1,0 +1,215 @@
+@media (max-width: 900px) {
+
+body,
+    html {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        background: url(bg.jpg) lightgray 50% / cover no-repeat;
+    }
+
+    /* header */
+    .top2 {
+        width: 100vw;
+        height: 5.9vh;
+        background: rgba(255, 73, 78, 0.26);
+        position: absolute;
+        top: 0;
+        z-index: 3;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .logo2 {
+        padding-top: 0.1%;
+        padding-left: 2px;
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .menu {
+        width: 2.5vw;
+        height: 2.5vh;
+        aspect-ratio: 1/1;
+        position: absolute;
+        right: 10px;
+        top: 8px;
+        z-index: 4;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        width: 100vw;
+        min-height: 30vh;
+        height: 30vh;
+        background: linear-gradient(90deg,
+            rgba(255, 157, 144, 0.84) 14%,
+            rgba(255, 106, 63, 0.84) 28%,
+            rgba(255, 159, 47, 0.84) 42%,
+            rgba(255, 215, 57, 0.84) 56%,
+            rgba(193, 204, 74, 0.84) 70%,
+            rgba(159, 219, 230, 0.84) 84%,
+            rgba(200, 128, 165, 0.84) 98%);
+    }
+
+
+    .text1{
+        width: 50.7vw;
+        height: 16.8vh;
+        color: #FFF;
+        text-align: center;
+        text-shadow: 0 4px 4px rgba(255, 0, 0, 0.95);
+        font-family: Agbalumo;
+        font-size:  clamp(45px, 4vw, 48px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .vid-container{
+        width: 90vw; 
+        height: auto; 
+        border-radius: 34px;
+        background: #FF9570;
+        box-shadow: 0 4px 4px 3px #FF6A3F;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto 0 auto; 
+        box-sizing: border-box;
+        overflow: hidden; 
+    }
+
+    .video{
+    width: 80vw;
+    height: auto;
+    aspect-ratio: 16/9; /* automatically calculates height based on width */
+    transform: rotate(0.197deg);
+    padding-top: 20px;
+    }
+
+    .text2{
+        width: 80vw;
+        height: auto;
+        color: #000;
+        text-align: center;
+        font-family: Agbalumo;
+        font-size: 10px;
+        font-weight: 100vw;
+        line-height: normal;
+        margin-top: 20px;           
+        margin-left: 5px;
+    }
+
+    /*menu*/
+
+/* base styles */
+
+.bullet{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bullet li {
+    margin-bottom: 20%; 
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: #fff45c;
+}
+
+/* off-screen-menu */
+.off-screen-menu {
+    background-color:  rgb(255, 166, 82);
+    height: 100vh;
+    width: 100vw;
+    max-width: 450vw;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 2.3rem;
+    transition: .3s ease;
+    overflow: hidden;
+    font-family: Agbalumo;
+    z-index: 4;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+
+
+/* nav */
+nav {
+    display: flex;
+    margin-bottom: -7.5%;
+}
+
+/* ham menu */
+.ham-menu {
+    height: 3vh;
+    width: 3vw;
+    margin-left: auto;
+    position: relative;
+    margin-right: 2%;
+    z-index: 4;
+}
+.ham-menu span {
+    height: 0.24vh;
+    width: 7vw;
+    background-color: #fcfcfc;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-70%, 90%);
+    transition: .3s ease;
+    
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+    margin-top: 10px;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+}
